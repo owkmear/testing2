@@ -188,8 +188,8 @@ function handleSocket(socket) {
 io.on('connection', handleSocket);
 log('Running room server on port %d', port);
 
-var stdin = process.openStdin();
+/*var stdin = process.openStdin();
 
 stdin.addListener("data", function(d) {
     console.log("you entered: [" + d.toString().trim() + "]");
-  });
+  });*/
