@@ -4,7 +4,8 @@ var file = new(static.Server)();
 var app = http.createServer(function (req, res) {
 	file.serve(req, res);
 });
-port = Number(process.env.PORT || 3000);
+//port = Number(process.env.PORT || 3000);
+port = Number(3000);
 app.listen(port);
 
 var io = require('socket.io').listen(app);
