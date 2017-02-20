@@ -1,20 +1,10 @@
-var static = require('node-static');
-var http = require('http');
-var file = new(static.Server)();
-var app = http.createServer(function (req, res) {
-	file.serve(req, res);
-});
+
 port = Number(process.env.PORT || 3000);
-app.listen(port);
-
-var io = require('socket.io').listen(app);
-
-//port = Number(process.env.PORT || 3000);
 var MAX_ROOM_USERS = 15;
 
 //var fs = require('fs');
 //var log = console.log.bind(console);
-//var io = require('socket.io')(port);
+var io = require('socket.io')(port);
 
 var rooms = {};
 var lastUserId = 0;
