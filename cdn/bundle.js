@@ -927,9 +927,9 @@ GameRoom.prototype = {
         console.log('%cJoined room', 'color: green', roomInfo);
     }
 }
-//var gameRoom = new GameRoom('https://' + window.location.hostname); // Herokuapp
+var gameRoom = new GameRoom('https://' + window.location.hostname); // Herokuapp
 //var gameRoom = new GameRoom('http://' + window.location.hostname + ':3000'); // Local client + local server
-var gameRoom = new GameRoom('https://fakeproject.herokuapp.com'); // Local client + remote server
+//var gameRoom = new GameRoom('https://fakeproject.herokuapp.com'); // Local client + remote server
 
 
 
